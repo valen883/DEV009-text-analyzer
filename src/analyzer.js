@@ -20,3 +20,6 @@ const analyzer = {
 };
 
 export default analyzer;
+
+//acá debes implementar el objeto analyzer, el cual ya está exportado en el boilerplate. 
+//Este objeto (analyzer) debe contener seis métodos:

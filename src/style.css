@@ -1,1 +1,30 @@
-/* este archivo debe contener las reglas de estilo*
+/* este archivo debe contener las reglas de estilo*/
+body{
+    background-color: lightsteelblue;
+}
+
+head{
+    display: flex;
+    justify-content: center;
+}
+
+footer{
+    display: flex;
+    justify-content: center;
+}
+
+h1{
+    color: orangered;
+    display: flex;
+    justify-content: center
+}
+
+.ul{
+    display: inline;
+    flex-direction: column;
+    align-items: center;
+}
+
+.li{
+    border-width: 2px;
+}

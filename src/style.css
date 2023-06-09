@@ -1,6 +1,7 @@
 /* este archivo debe contener las reglas de estilo*/
 body{
-    background-color: rgb(176, 222, 203);
+    background: #e0c8c8;
+    margin: 50px;
 }
 
 head{
@@ -11,31 +12,37 @@ head{
 footer{
     display: flex;
     justify-content: center;
+    margin: 20px;
 }
 
 h1{
-    color: orangered;
+    color: #402e41;
     display: flex;
     justify-content: center
 }
 
-.op1{
-    display: flex;
+li{
+    display: inline-block;
     justify-content: center;
 }
 
-.li{
-    border-width: 2px;
+.ul{
+    padding: 50px;
 }
 
 textarea[class~="textarea"]{
     display: flex;
     justify-content: center;
+    margin: auto;
     border-width: 3px;
     width: 450px;
     height: 130px;
 }
 
 button#reset-button{
-    background-color: sandybrown;
+    background-color: #92757a;
+    border-width: 2px;
+    height: 60px;
+    width: 150px;;
+    margin: 30px 280px 30px;;
 }

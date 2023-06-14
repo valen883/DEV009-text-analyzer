@@ -3,21 +3,26 @@
   <!-- este es el punto de entrada a tu aplicación. Este archivo debe contener tu HTML. --> 
 <head>
   <meta charset="utf-8">
-  <title>Analizador de texto</title>
   <link rel="stylesheet" href="style.css" />
-  <h1>Analizador de texto</h1>
+  <title>Analizador de texto</title>
 </head>
 <body>
-  <ul>
-    <li>Caracteres: </li>
-    <li>Caracteres sin espacios: </li>
-    <li>Palabras: </li>
-    <li>Numeros: </li>
-    <li>Suma de numeros: </li>
-    <li>Promedio longitud:</li>
-  </ul>
-  <textarea cols="40" rows="13"></textarea>
+  <header>
+    <h1>Analizador de texto</h1>
+  </header>
+  <section>
+    <ul class="listUl">
+        <li class="listLi">Caracteres: </li>
+        <li class="listLi">Caracteres sin espacios: </li>
+        <li class="listLi">Palabras: </li>
+        <li class="listLi">Numeros: </li>
+        <li class="listLi">Suma de numeros: </li>
+        <li class="listLi">Promedio longitud:</li>
+    </ul>
+  </section>
   <script src="index.js" type="module"></script>
+  <textarea cols="40" rows="13" name="user-input" class="textarea"></textarea>
+  <button id="reset-button" > Resetear metricas</button>
+  <footer><p>Creado por <strong>Valentina Vargas</strong> </p></footer>
 </body>
-<footer><p>Creado por Valentina Vargas </p></footer>
 </html>

@@ -1,10 +1,10 @@
 /* este archivo debe contener las reglas de estilo*/
 body{
-    background: #e0c8c8;
-    margin: 50px;
+    background:#e0c8c8;
+    margin: 40px;
 }
 
-head{
+header{
     display: flex;
     justify-content: center;
 }
@@ -12,37 +12,48 @@ head{
 footer{
     display: flex;
     justify-content: center;
-    margin: 20px;
+    margin: 10px;
 }
 
 h1{
+    font-family: 'Times New Roman', Times, serif;
+    text-decoration: underline;
     color: #402e41;
     display: flex;
     justify-content: center
 }
 
-li{
-    display: inline-block;
-    justify-content: center;
-}
-
-.ul{
-    padding: 50px;
-}
-
-textarea[class~="textarea"]{
+.listUl{
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     display: flex;
     justify-content: center;
-    margin: auto;
-    border-width: 3px;
-    width: 450px;
+    width: auto;
     height: 130px;
 }
 
+.listLi{
+    list-style: none;
+    width: 100px;
+    height: 50px;
+    padding: 20px;
+    margin: 10px;
+}
+
+textarea[class="textarea"]{
+    border-width: 3px;
+    display: flex;
+    justify-content: center;
+    width: 400px;
+    height: 130px;
+    margin: 10px;  
+    margin: 10px 400px 10px;
+}
+
 button#reset-button{
+    font-family: 'Courier New', Courier, monospace;
     background-color: #92757a;
     border-width: 2px;
     height: 60px;
     width: 150px;;
-    margin: 30px 280px 30px;;
+    margin: 10px 530px 10px;
 }

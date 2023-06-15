@@ -6,13 +6,14 @@ const analyzer = {
   },
   getCharacterCount: (text) => {
     //TODO: esta función debe retornar el recuento de caracteres que se encuentran en el parámetro `text` de tipo `string`.
-    //text.split(''); cadena vacia como separador
     const characterNumber =  text.length;
     return characterNumber
   },
   getCharacterCountExcludingSpaces: (text) => {
     //TODO: esta función debe retornar el recuento de caracteres excluyendo espacios y signos de puntuación que se encuentran en el parámetro `text` de tipo `string`.
-    const characExcludingSpacest = text.replace(/ /g, "" );
+    //string.replace(/ /g, «»); esta expresión regular contiene un espacio en blanco
+    // buscara todos los espacios en blanco de una cadena y los reemplazara por una cadena vacía.
+    const characExcludingSpacest = text.replace(/ /g, "" ).length;
     return characExcludingSpacest
   },
   getAverageWordLength: (text) => {    

@@ -39,7 +39,8 @@ h1{
     margin: 10px;
 }
 
-textarea[class="textarea"]{
+
+textarea[name="user-input"]{
     border-width: 3px;
     display: flex;
     justify-content: center;
@@ -49,7 +50,7 @@ textarea[class="textarea"]{
     margin: 10px 400px 10px;
 }
 
-button#reset-button{
+#reset-button{
     font-family: 'Courier New', Courier, monospace;
     background-color: #92757a;
     border-width: 2px;

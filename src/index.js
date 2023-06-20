@@ -21,6 +21,6 @@ box.addEventListener("keyup", function () {
 
 const  bottonR = document.getElementById('reset-button');
 bottonR.addEventListener('click', function(){
-  const textA = document.querySelector('textarea[type="text]');
-  textA.value = '';
+  const textA = document.querySelector('textarea[name="user-input"]');
+  textA.value = ''; 
 })

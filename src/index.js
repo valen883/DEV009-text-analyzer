@@ -13,8 +13,14 @@ box.addEventListener("keyup", function () {
   document.getElementById('wordsCount').innerHTML = wordsNumber;
   const number = analyzer.getNumberCount(text);
   document.getElementById('numbersCount').innerHTML = number;
-  const numberSum = analyzer.getNumberSum(text)
-  document.getElementById('sum').innerHTML = numberSum
-  const wordsLength = analyzer.getAverageWordLength(text)
-  document.getElementById('wordLength').innerHTML = wordsLength
+  const numberSum = analyzer.getNumberSum(text);
+  document.getElementById('sum').innerHTML = numberSum;
+  const wordsLength = analyzer.getAverageWordLength(text);
+  document.getElementById('wordLength').innerHTML = wordsLength;
+})
+
+const  bottonR = document.getElementById('reset-button');
+bottonR.addEventListener('click', function(){
+  const textA = document.querySelector('textarea[type="text]');
+  textA.value = '';
 })

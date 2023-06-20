@@ -11,9 +11,8 @@ const analyzer = {
   },
   getCharacterCountExcludingSpaces: (text) => {
     //TODO: esta función debe retornar el recuento de caracteres excluyendo espacios y signos de puntuación que se encuentran en el parámetro `text` de tipo `string`.
-    //string.replace(/ /g, «»); esta expresión regular contiene un espacio en blanco
-    // buscara todos los espacios en blanco de una cadena y los reemplazara por una cadena vacía.
-    const characExcludingSpacest = text.replace(/ /g, "" ).length;
+    //La expresión regular [\s\W_] coincide con cualquier carácter que sea un espacio (\s), un carácter no alfanumérico (\W), o un guión bajo (_). L
+    const characExcludingSpacest = text.replace(/[\s\W_]/g, "").length;
     return characExcludingSpacest
   },
   getAverageWordLength: (text) => {    

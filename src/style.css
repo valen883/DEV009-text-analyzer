@@ -53,6 +53,7 @@ textarea[name="user-input"]{
 #reset-button{
     font-family: 'Courier New', Courier, monospace;
     background-color: #92757a;
+    color: aliceblue;
     border-width: 2px;
     height: 60px;
     width: 150px;;

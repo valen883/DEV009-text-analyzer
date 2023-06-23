@@ -20,17 +20,26 @@ const analyzer = {
     //TODO: esta función debe retornar la longitud media de palabras que se encuentran en el parámetro `text` de tipo `string`.
     const words = text.split(' ');
     const wordNumb = words.length;
-    //reduce sumar la longitud de todas las palabras
+    //.reduce suma la longitud de todas las palabras reduciendo el array a un solo valor
     const totalLength = words.reduce((acc, word) => acc + word.length, 0);
+   // acc es el acumulador, word el array 
+   // longitud media = suma los números, después divide por cuántos números hay.
     const averageLength = wordNumb > 0 ? totalLength / wordNumb : 0;
+    // parseFloat conversion de string a float (decimal)
+    //toFixed redondea el float a dos numeros desp. de la coma
     return parseFloat(averageLength.toFixed(2));
   },
   getNumberCount: (text) => {
     //TODO: esta función debe retornar cúantos números se encuentran en el parámetro `text` de tipo `string`.
+   //.match  devuelve un array con todas las coincidencias encontradas con la expres. regul.
+   // sin concidencias || OR se asigna un []
     const numbers = text.match(/\b\d+(\.\d+)?\b/g) || [];
     let count = 0;
+  // forEach ejecuta la función indicada una vez por cada elemento del array  
     numbers.forEach((number) => {
       const parsedNumber = parseFloat(number);
+  //! negacion de isNaN not a number
+  // isFinite determina si el argumento es un numero finito (contrario a infinito)
       if (!isNaN(parsedNumber) && isFinite(parsedNumber)) {
         count++;
       }

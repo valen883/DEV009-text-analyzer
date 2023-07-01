@@ -1,4 +1,4 @@
-const analyzer = {  
+const analyzer = {
   getWordCount: (text) => {
     //TODO: esta funcion debe retornar el recuento de palabras que se encuentran en  el parámetro `text` de tipo `string`.
     const getWordNumber = text.split(" ").length;
@@ -6,7 +6,7 @@ const analyzer = {
   },
   getCharacterCount: (text) => {
     //TODO: esta función debe retornar el recuento de caracteres que se encuentran en el parámetro `text` de tipo `string`.
-    const characterNumber =  text.length;
+    const characterNumber = text.length;
     return characterNumber
   },
   getCharacterCountExcludingSpaces: (text) => {
@@ -16,14 +16,14 @@ const analyzer = {
     const characExcludingSpacest = text.replace(/[\s\W_]/g, "").length;
     return characExcludingSpacest
   },
-  getAverageWordLength: (text) => {    
+  getAverageWordLength: (text) => {
     //TODO: esta función debe retornar la longitud media de palabras que se encuentran en el parámetro `text` de tipo `string`.
     const words = text.split(' ');
     const wordNumb = words.length;
     //.reduce suma la longitud de todas las palabras reduciendo el array a un solo valor
     const totalLength = words.reduce((acc, word) => acc + word.length, 0);
-   // acc es el acumulador, word el array 
-   // longitud media = suma los números, después divide por cuántos números hay.
+    // acc es el acumulador, word el array 
+    // longitud media = suma los números, después divide por cuántos números hay.
     const averageLength = wordNumb > 0 ? totalLength / wordNumb : 0;
     // parseFloat conversion de string a float (decimal)
     //toFixed redondea el float a dos numeros desp. de la coma
@@ -31,15 +31,15 @@ const analyzer = {
   },
   getNumberCount: (text) => {
     //TODO: esta función debe retornar cúantos números se encuentran en el parámetro `text` de tipo `string`.
-   //.match  devuelve un array con todas las coincidencias encontradas con la expres. regul.
-   // sin concidencias || OR se asigna un []
+    //.match  devuelve un array con todas las coincidencias encontradas con la expres. regul.
+    // sin concidencias || OR se asigna un []
     const numbers = text.match(/\b\d+(\.\d+)?\b/g) || [];
     let count = 0;
-  // forEach ejecuta la función indicada una vez por cada elemento del array  
+    // forEach ejecuta la función indicada una vez por cada elemento del array  
     numbers.forEach((number) => {
       const parsedNumber = parseFloat(number);
-  //! negacion de isNaN not a number
-  // isFinite determina si el argumento es un numero finito (contrario a infinito)
+      //! negacion de isNaN not a number
+      // isFinite determina si el argumento es un numero finito (contrario a infinito)
       if (!isNaN(parsedNumber) && isFinite(parsedNumber)) {
         count++;
       }
@@ -48,13 +48,13 @@ const analyzer = {
   },
   getNumberSum: (text) => {
     //TODO: esta función debe retornar la suma de todos los números que se encuentran en el parámetro `text` de tipo `string`.
-    const allWords=text.split(' ');
-    let sum=0;
-    for(let i=0; i<allWords.length; i++){
-      const currentWord=allWords[i];
-      if(currentWord !== ''){
-        if(!isNaN(currentWord)){
-          sum =sum + parseFloat(currentWord);
+    const allWords = text.split(' ');
+    let sum = 0;
+    for (let i = 0; i < allWords.length; i++) {
+      const currentWord = allWords[i];
+      if (currentWord !== '') {
+        if (!isNaN(currentWord)) {
+          sum = sum + parseFloat(currentWord);
         }
       }
     }
